@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+   <html>
+     <head>
+         <link href="website.css" rel="stylesheet" type="text/css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Gregory Keith Elsasser Fanpage</title>
+<style>
+  
+   
+  </style>
+     </head>
+     <script type="text/javascript" src="website.js"></script>
+     <body>
+            <div class="clock">
+            <span id="hr">00</span>
+            <span> : </span>
+            <span id="min">00</span>
+            <span> : </span>
+            <span id="sec">00</span>
+        </div>
+        <div class="topnav">
+        <button class="tablink" onclick="openPage('About', this)"id="defaultOpen">Home</button>
+        <button class="tablink" onclick="openPage('Occupations', this)">Occupations</button>
+        <button class="tablink" onclick="openPage('Pictures', this)">Pictures</button>
+        <button class="tablink" onclick="openPage('Social', this)">Social</button>
+        </div>
+        <div id = "About" class="tabcontent">
+            <h1>
+                About Gregory
+            </h1>
+            <p>
+                Gregory Keith Elsasser is an Anglo male who lives in California. He went to Azusa
+                Pacific University, majoring in English. He has three sons, Aaron, Trevor, and Chasen, 18, 17, and
+                8, respectively.
+            </p>  
+            <p>
+                Elsasser enjoyst working out, which can be seen as he has big and juicy muscles on his upper body. 
+                He used to use creatine which unfortunately damaged his liver.
+            </p>
+        </div>
+        <div id = "Occupations" class="tabcontent">
+            <h1>
+                Occupations
+            </h1>
+            <p>
+                Elsasser is an Englsh teacher at Warren High School.
+                Classes he teach are Honors English 9, Honors English 10, and English 11. He has taught in the Los Angeles County for 28 years. 
+                At Warren, he chaperones the EF Education First Europe Tours.
+            </p>
+            <p>    
+                Elsasser has had other different occupations. He was once a private detective, but resigned after being held at gunpoint. As of currently, he is a published playwright,
+                author, and teacher, of course. He also wrote for and created the award-winning television show, "The Adventures of Roman and Jorge". He also has had a history in acting,
+                appearing in several episodes of "The Way of the Master" TV show. 
+            </p>
+        </div>
+       <div id = "Pictures" class="tabcontent">
+            <h1>
+                Pictures
+            </h1>
+          <img src="juicy.jpg" alt ="Gregory Keith Elsasser" class="center"/>
+                <h4>
+                ^ Elsasser's Juicy Muscles ^
+            </h4>
+          <img src="greg.jpg" alt ="Gregory Keith Elsasser" class="center"/>
+          <img src="gregoryandhisboys.jpg" alt ="Gregory Keith Elsasser" class="center"/>
+          <img src="smuggreg.jpg" alt ="Gregory Keith Elsasser" class="center"/>
+ </div>
+ <div id="Social" class="tabcontent">
+  <h1>Social</h1>
+  <p>Links to Gregory's social media</p>
+    <button onclick="facebook()" class="buttonf">Facebook</button>
+    <button onclick="twitter()" class="buttont">Twitter</button>
+    <button onclick="youtube()" class="buttony">YouTube</button>
+    <button onclick="instagram()" class="buttoni">Instagram</button>
+
+</div>
+    <script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+document.getElementById("defaultOpen").click();
+</script>
+<script>
+function facebook() {
+  location.replace("https://www.facebook.com/greg.elsasser")
+}
+</script>
+<script>
+function twitter() {
+  location.replace("https://twitter.com/elsassergreg?lang=en")
+}
+</script>
+<script>
+function youtube() {
+  location.replace("https://www.youtube.com/channel/UCekR2PMAA-EfasHSArx9vaA")
+}
+</script>
+<script>
+function instagram() {
+  location.replace("https://www.instagram.com/gregorythemediocre/")
+}
+</script>
+    </body>
+  </html>
